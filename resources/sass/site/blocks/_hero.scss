@@ -1,0 +1,45 @@
+.main {
+  margin-bottom: 240px;
+  margin-top: 128px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding: 24px 320px;
+
+    .main__title {
+      font-size: 64px;
+      font-weight: 800;
+      margin-bottom: 32px;
+    }
+
+    .button__painted {
+      svg {
+        margin-right: 11px;
+        transition: fill 0.2s ease;
+
+        & *[fill] {
+          fill: var(--color-white);
+        }
+
+        path {
+          transition: fill 0.2s ease;
+        }
+      }
+
+      &:hover {
+        border: 1px solid var(--color-dark-blue);
+        background-color: var(--color-dark-blue);
+        transform: scale(1.1);
+
+        & *[fill] {
+          fill: currentColor;
+        }
+
+        path {
+          fill: currentColor;
+        }
+      }
+    }
+  }
+}
