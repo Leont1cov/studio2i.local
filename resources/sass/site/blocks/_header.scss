@@ -1,3 +1,5 @@
+@use '../core/variables' as *;
+
 .header {
   &__inner {
     display: flex;
@@ -9,49 +11,35 @@
     .header__menu {
       margin-left: auto;
 
-      &-link {
-        display: inline-block;
-        font-weight: 600;
-        color: var(--color-black);
-        transition:
-          transform 0.2s ease,
-          color 0.2s ease;
-      }
-
       &-list {
         display: flex;
         align-items: center;
         gap: 40px;
 
-        li:not(:last-child) .header__menu-link:hover {
-          transform: scale(1.2);
-          color: var(--color-blue-accent);
-        }
-      }
-    }
+        .header__menu-link {
+          display: inline-block;
+          font-weight: 600;
+          color: $color-black;
+          transition: color 0.3s ease;
 
-    .button__transparent {
-      svg {
-        margin-right: 11px;
-        transition: fill 0.2s ease;
+          &:hover {
+            color: $color-blue-accent;
+          }
 
-        path {
-          transition: fill 0.2s ease;
-        }
-      }
-
-      &:hover {
-        border: 1px solid var(--color-blue-accent);
-        color: var(--color-white);
-        background-color: var(--color-blue-accent);
-        transform: scale(1.1);
-
-        & *[fill] {
-          fill: currentColor;
+          &:active {
+            color: $color-dark-blue;
+          }
         }
 
-        path {
-          fill: currentColor;
+        .button_transparent {
+          &:hover {
+            border: 1px solid $color-blue-accent;
+            color: $color-blue-accent;
+          }
+          &:active {
+            border-color: $color-dark-blue;
+            color: $color-dark-blue;
+          }
         }
       }
     }

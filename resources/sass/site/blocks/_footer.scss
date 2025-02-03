@@ -1,6 +1,10 @@
+@use '../core/variables' as *;
+
 .footer {
+  display: flex;
+  flex-direction: column;
   margin-top: auto;
-  background-color: var(--color-dark-black);
+  background-color: $color-dark-black;
   padding: 240px 320px;
 
   &__top {
@@ -9,61 +13,10 @@
     flex-wrap: wrap;
     gap: 56px;
 
-    .social {
-      display: flex;
-
-      &__text {
-        color: var(--color-white);
-        font-weight: 600;
-        margin-right: 24px;
-      }
-
-      .network__container {
-        display: flex;
-        align-items: center;
-        transition:
-          transform 0.2s ease,
-          color 0.2s ease;
-
-        &-inside {
-          display: flex;
-          transition: transform 0.2s ease;
-        }
-
-        svg {
-          margin-right: 8px;
-          transition: fill 0.2s ease;
-
-          path {
-            transition: fill 0.2s ease;
-          }
-        }
-
-        &:hover {
-          transform: scale(1.1);
-          color: var(--color-blue-accent);
-
-          .social__text {
-            color: currentColor;
-          }
-
-          svg {
-            & *[fill] {
-              fill: currentColor;
-            }
-
-            path {
-              fill: currentColor;
-            }
-          }
-        }
-      }
-    }
-
     .footer__contacts {
       .footer__title {
         text-transform: uppercase;
-        color: var(--color-white);
+        color: $color-white;
         margin-bottom: 16px;
       }
 
@@ -71,36 +24,40 @@
         display: inline-block;
         font-size: 32px;
         font-weight: 600;
-        color: var(--color-white);
+        color: $color-white;
         margin-bottom: 8px;
-        transition:
-          transform 0.2s ease,
-          color 0.2s ease;
+        transition: color 0.2s ease;
 
         &:hover {
-          transform: scale(1.1);
-          color: var(--color-blue-accent);
+          color: $color-blue-accent;
+        }
+
+        &:active {
+          color: $color-dark-blue;
         }
       }
     }
 
-    .network {
-      transition:
-        transform 0.2s ease,
-        color 0.2s ease;
+    .social {
+      display: flex;
+      gap: 24px;
 
-      &:hover {
-        transform: scale(1.1);
-      }
+      .network {
+        color: $color-white;
+        font-weight: 600;
 
-      .social__text {
-        transition:
-          transform 0.2s ease,
-          color 0.2s ease;
+        &__container {
+          display: flex;
+          gap: 8px;
+          transition: color 0.2s ease;
 
-        &:hover {
-          color: var(--color-blue-accent);
-          transform: scale(1.1);
+          &:hover {
+            color: $color-blue-accent;
+          }
+
+          &:active {
+            color: $color-dark-blue;
+          }
         }
       }
     }
@@ -112,22 +69,23 @@
 
       .footer__time {
         margin-top: 8px;
-        color: var(--color-white);
+        color: $color-white;
         font-weight: 300;
         line-height: 24px;
       }
 
       .footer__mail {
         display: inline-block;
-        color: var(--color-white);
+        color: $color-white;
         font-weight: 600;
-        transition:
-          transform 0.2s ease,
-          color 0.2s ease;
+        transition: color 0.2s ease;
 
         &:hover {
-          color: var(--color-blue-accent);
-          transform: scale(1.1);
+          color: $color-blue-accent;
+        }
+
+        &:active {
+          color: $color-dark-blue;
         }
       }
     }
@@ -138,12 +96,12 @@
   padding: 24px 320px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid var(--color-black);
-  background-color: var(--color-dark-black);
-  color: var(--color-white);
+  gap: 20px;
+  border-top: 1px solid $color-black;
+  background-color: $color-dark-black;
+  color: $color-white;
   font-weight: 300;
   font-size: 12px;
 }

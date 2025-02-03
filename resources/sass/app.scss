@@ -1,11 +1,14 @@
-@import './site/core/reset';
-@import './site/core/html';
+@forward './site/core/reset';
+@forward './site/core/html';
+@forward './site/core/iconsfont';
 
-@import './site/type/font';
-@import './site/type/common';
-@import './site/type/variables';
+@forward './site/type/font';
+@forward './site/type/common';
+@forward './site/core/variables';
 
-@import './site/blocks/body';
-@import './site/blocks/header';
-@import './site/blocks/hero';
-@import './site/blocks/footer';
+@forward './site/blocks/body';
+@forward './site/blocks/button';
+@forward './site/blocks/phone';
+@forward './site/blocks/header';
+@forward './site/blocks/hero';
+@forward './site/blocks/footer';

@@ -1,41 +1,8 @@
+@use '../core/variables' as *;
+
 body {
   font-family: 'Geologica', sans-serif;
   font-size: 16px;
-  color: var(--color-black);
+  color: $color-black;
   font-weight: 250;
-}
-
-.button__transparent {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  max-width: fit-content !important;
-  border: 1px solid var(--color-black);
-  border-radius: 32px;
-  padding: 12px 24px;
-  white-space: nowrap;
-  overflow: hidden;
-  transition:
-    transform 0.2s ease,
-    color 0.2s ease,
-    background-color 0.2s ease,
-    border-color 0.2s ease !important;
-}
-
-.button__painted {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: fit-content;
-  border: 1px solid var(--color-blue-accent);
-  border-radius: 32px;
-  padding: 16px 32px;
-  font-weight: 600;
-  color: var(--color-white);
-  background-color: var(--color-blue-accent);
-  transition:
-    transform 0.2s ease,
-    color 0.2s ease,
-    background-color 0.2s ease,
-    border-color 0.2s ease;
 }

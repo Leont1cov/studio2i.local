@@ -1,0 +1,14 @@
+@use '../core/variables' as *;
+
+.button {
+  display: flex !important;
+  gap: 14px;
+  align-items: center !important;
+  justify-content: center !important;
+  max-width: fit-content !important;
+  border: 1px solid $color-black;
+  border-radius: 32px;
+  padding: 12px 24px;
+  font-weight: 600;
+  white-space: nowrap;
+}
