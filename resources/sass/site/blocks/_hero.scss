@@ -15,12 +15,28 @@
       padding: rem(24) rem(64);
     }
 
+    @include tablet {
+      padding: rem(24) rem(32);
+    }
+
+    @include phone {
+      padding: rem(24) rem(16);
+    }
+
     .main__title {
       display: flex;
       flex-direction: column;
       font-size: rem(64);
       font-weight: 800;
       margin-bottom: rem(32);
+
+      @include tablet {
+        font-size: rem(40);
+      }
+
+      @include phone {
+        font-size: rem(40);
+      }
     }
 
     .main__button {
@@ -29,6 +45,10 @@
       padding: rem(16) rem(32);
       border: rem(1) solid $color-blue-accent;
       transition: background-color 0.2s ease;
+
+      @include phone {
+        padding: rem(16) rem(83.5);
+      }
 
       &:hover {
         border-color: $color-light-blue;

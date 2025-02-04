@@ -7,11 +7,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     padding: rem(24) rem(320);
 
     @include laptop {
       padding: rem(24) rem(64);
+    }
+
+    @include tablet {
+      padding: rem(24) rem(32);
+    }
+
+    @include phone {
+      padding: rem(8) rem(8);
     }
 
     .header__menu {
@@ -22,11 +29,59 @@
         align-items: center;
         gap: rem(40);
 
+        @include phone {
+          gap: rem(13);
+        }
+
+        .burger {
+          display: none;
+          font-weight: 600;
+          color: $color-black;
+
+          ._icon-burger {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            color: $color-black;
+            transition: color 0.3s ease;
+
+            @include phone {
+              span {
+                display: none;
+              }
+            }
+
+            &:hover {
+              color: $color-blue-accent;
+            }
+
+            &:active {
+              color: $color-dark-blue;
+            }
+          }
+
+          @include tablet {
+            display: block;
+          }
+
+          @include phone {
+            display: block;
+          }
+        }
+
         .header__menu-link {
           display: inline-block;
           font-weight: 600;
           color: $color-black;
           transition: color 0.3s ease;
+
+          @include phone {
+            display: none;
+          }
+
+          @include tablet {
+            display: none;
+          }
 
           &:hover {
             color: $color-blue-accent;
@@ -45,6 +100,22 @@
           &:active {
             border-color: $color-dark-blue;
             color: $color-dark-blue;
+          }
+
+          @include phone {
+            border: none;
+            .button_number {
+              display: none;
+            }
+
+            &:hover {
+              border: none;
+              color: $color-blue-accent;
+            }
+
+            &:active {
+              color: $color-dark-blue;
+            }
           }
         }
       }

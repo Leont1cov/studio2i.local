@@ -13,6 +13,14 @@
     padding: rem(240) rem(64);
   }
 
+  @include tablet {
+    padding: rem(240) rem(32);
+  }
+
+  @include phone {
+    padding: rem(144) rem(16);
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -104,6 +112,11 @@
   @include laptop {
     padding: rem(24) rem(64);
   }
+
+  @include phone {
+    padding: rem(144) rem(16);
+  }
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

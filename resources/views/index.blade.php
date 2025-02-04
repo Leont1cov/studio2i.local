@@ -25,13 +25,24 @@
                             <a href="#" class="header__menu-link">Контакты</a>
                         </li>
 
+                        <li class="header__menu-item burger">
+                            <a href="#">
+                                <span class="_icon-burger">
+                                    <span>Меню</span>
+                                </span>
+                            </a>
+                        </li>
+
                         <li class="header__menu-item">
                             <a
                                 href="tel:+79310093772"
                                 class="header__menu-link button button_transparent"
                             >
                                 <span class="_icon-phone phone"></span>
-                                +7 931 009-37-72
+
+                                <span class="button_number">
+                                    +7 931 009-37-72
+                                </span>
                             </a>
                         </li>
                     </ul>
@@ -43,10 +54,9 @@
             <div class="main__inner">
                 <div class="main__hero">
                     <h1 class="main__title">
-                        Разработка веб-сервисов
+                        <span>Разработка веб-сервисов</span>
                         <span>и сайтов c 2013 года</span>
                     </h1>
-
                     <a
                         href="tel:+79310093772"
                         class="button main__button button_painted"
