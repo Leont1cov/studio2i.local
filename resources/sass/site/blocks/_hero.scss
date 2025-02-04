@@ -1,36 +1,42 @@
+@use '../adaptive/media-queries' as *;
 @use '../core/variables' as *;
+@use '../core/function' as *;
 
 .main {
-  margin-bottom: 240px;
-  margin-top: 128px;
+  margin-bottom: rem(240);
+  margin-top: rem(128);
 
   &__inner {
     display: flex;
     align-items: center;
-    padding: 24px 320px;
+    padding: rem(24) rem(320);
+
+    @include laptop {
+      padding: rem(24) rem(64);
+    }
 
     .main__title {
       display: flex;
       flex-direction: column;
-      font-size: 64px;
+      font-size: rem(64);
       font-weight: 800;
-      margin-bottom: 32px;
+      margin-bottom: rem(32);
     }
 
     .main__button {
       color: $color-white;
       background-color: $color-blue-accent;
-      padding: 16px 32px;
-      border: 1px solid $color-blue-accent;
+      padding: rem(16) rem(32);
+      border: rem(1) solid $color-blue-accent;
       transition: background-color 0.2s ease;
 
       &:hover {
-        border: 1px solid $color-light-blue;
+        border-color: $color-light-blue;
         background-color: $color-light-blue;
       }
 
       &:active {
-        border: 1px solid $color-dark-blue;
+        border-color: $color-dark-blue;
         background-color: $color-dark-blue;
       }
     }

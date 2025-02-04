@@ -1,31 +1,37 @@
+@use '../adaptive/media-queries' as *;
 @use '../core/variables' as *;
+@use '../core/function' as *;
 
 .footer {
   display: flex;
   flex-direction: column;
   margin-top: auto;
   background-color: $color-dark-black;
-  padding: 240px 320px;
+  padding: rem(240) rem(320);
+
+  @include laptop {
+    padding: rem(240) rem(64);
+  }
 
   &__top {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 56px;
+    gap: rem(56);
 
     .footer__contacts {
       .footer__title {
         text-transform: uppercase;
         color: $color-white;
-        margin-bottom: 16px;
+        margin-bottom: rem(16);
       }
 
       .footer__number {
         display: inline-block;
-        font-size: 32px;
+        font-size: rem(32);
         font-weight: 600;
         color: $color-white;
-        margin-bottom: 8px;
+        margin-bottom: rem(8);
         transition: color 0.2s ease;
 
         &:hover {
@@ -40,7 +46,7 @@
 
     .social {
       display: flex;
-      gap: 24px;
+      gap: rem(24);
 
       .network {
         color: $color-white;
@@ -48,7 +54,7 @@
 
         &__container {
           display: flex;
-          gap: 8px;
+          gap: rem(8);
           transition: color 0.2s ease;
 
           &:hover {
@@ -68,10 +74,10 @@
       justify-content: flex-end;
 
       .footer__time {
-        margin-top: 8px;
+        margin-top: rem(8);
         color: $color-white;
         font-weight: 300;
-        line-height: 24px;
+        line-height: rem(24);
       }
 
       .footer__mail {
@@ -93,15 +99,19 @@
 }
 
 .footer__bottom {
-  padding: 24px 320px;
+  padding: rem(24) rem(320);
+
+  @include laptop {
+    padding: rem(24) rem(64);
+  }
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
-  border-top: 1px solid $color-black;
+  gap: rem(20);
+  border-top: rem(1) solid $color-black;
   background-color: $color-dark-black;
   color: $color-white;
   font-weight: 300;
-  font-size: 12px;
+  font-size: rem(12);
 }

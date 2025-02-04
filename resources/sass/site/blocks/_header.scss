@@ -1,4 +1,6 @@
+@use '../adaptive/media-queries' as *;
 @use '../core/variables' as *;
+@use '../core/function' as *;
 
 .header {
   &__inner {
@@ -6,7 +8,11 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 24px 320px;
+    padding: rem(24) rem(320);
+
+    @include laptop {
+      padding: rem(24) rem(64);
+    }
 
     .header__menu {
       margin-left: auto;
@@ -14,7 +20,7 @@
       &-list {
         display: flex;
         align-items: center;
-        gap: 40px;
+        gap: rem(40);
 
         .header__menu-link {
           display: inline-block;
@@ -33,7 +39,7 @@
 
         .button_transparent {
           &:hover {
-            border: 1px solid $color-blue-accent;
+            border: rem(1) solid $color-blue-accent;
             color: $color-blue-accent;
           }
           &:active {
