@@ -62,7 +62,7 @@
                     </h1>
                     <a
                         href="tel:+79310093772"
-                        class="button main__button button_painted"
+                        class="button hero__button button_painted"
                     >
                         <span class="_icon-phone phone"></span>
                         +7 931 009-37-72

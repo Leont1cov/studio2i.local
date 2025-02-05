@@ -92,15 +92,6 @@
         }
 
         .button_transparent {
-          &:hover {
-            border: 1rem solid $color-blue-accent;
-            color: $color-blue-accent;
-          }
-          &:active {
-            border-color: $color-dark-blue;
-            color: $color-dark-blue;
-          }
-
           @include phone {
             border: none;
             .button_number {

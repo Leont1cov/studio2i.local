@@ -12,3 +12,14 @@
   font-weight: 600;
   white-space: nowrap;
 }
+
+.button_transparent {
+  &:hover {
+    border: 1rem solid $color-blue-accent;
+    color: $color-blue-accent;
+  }
+  &:active {
+    border-color: $color-dark-blue;
+    color: $color-dark-blue;
+  }
+}
