@@ -51,9 +51,9 @@
         </header>
 
         <main class="main">
-            <div class="main__inner">
-                <div class="main__hero">
-                    <h1 class="main__title">
+            <div class="hero">
+                <div class="hero__inner">
+                    <h1 class="hero__title">
                         <span>Разработка веб-сервисов</span>
                         <span>и сайтов c 2013 года</span>
                     </h1>
