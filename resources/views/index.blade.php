@@ -10,7 +10,10 @@
         <header class="header">
             <div class="header__inner">
                 <a href="#" class="header__logo logo" title="2I">
-                    <x-icons.logo class="logo__image" />
+                    <img
+                        src="{{ Vite::asset('resources/views/components/icons/logo.svg') }}"
+                        alt=""
+                    />
                 </a>
 
                 <nav class="header__menu">
