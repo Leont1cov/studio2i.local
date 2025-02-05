@@ -1,53 +1,52 @@
 @use '../adaptive/media-queries' as *;
 @use '../core/variables' as *;
-@use '../core/function' as *;
 
 .main {
-  margin-bottom: rem(240);
-  margin-top: rem(128);
+  margin-bottom: 240rem;
+  margin-top: 128rem;
 
   &__inner {
     display: flex;
     align-items: center;
-    padding: rem(24) rem(320);
+    padding: 24rem 320rem;
 
     @include laptop {
-      padding: rem(24) rem(64);
+      padding: 24rem 64rem;
     }
 
     @include tablet {
-      padding: rem(24) rem(32);
+      padding: 24rem 32rem;
     }
 
     @include phone {
-      padding: rem(24) rem(16);
+      padding: 24rem 16rem;
     }
 
     .main__title {
       display: flex;
       flex-direction: column;
-      font-size: rem(64);
+      font-size: 64rem;
       font-weight: 800;
-      margin-bottom: rem(32);
+      margin-bottom: 32rem;
 
       @include tablet {
-        font-size: rem(40);
+        font-size: 40rem;
       }
 
       @include phone {
-        font-size: rem(40);
+        font-size: 40rem;
       }
     }
 
     .main__button {
       color: $color-white;
       background-color: $color-blue-accent;
-      padding: rem(16) rem(32);
-      border: rem(1) solid $color-blue-accent;
+      padding: 16rem 32rem;
+      border: 1rem solid $color-blue-accent;
       transition: background-color 0.2s ease;
 
       @include phone {
-        padding: rem(16) rem(83.5);
+        padding: 16rem 83.5rem;
       }
 
       &:hover {

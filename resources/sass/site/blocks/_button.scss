@@ -1,15 +1,14 @@
 @use '../core/variables' as *;
-@use '../core/function' as *;
 
 .button {
   display: flex !important;
-  gap: rem(14);
+  gap: 14rem;
   align-items: center !important;
   justify-content: center !important;
   max-width: fit-content !important;
-  border: rem(1) solid $color-black;
-  border-radius: rem(32);
-  padding: rem(12) rem(24);
+  border: 1rem solid $color-black;
+  border-radius: 32rem;
+  padding: 12rem 24rem;
   font-weight: 600;
   white-space: nowrap;
 }

@@ -1,19 +1,19 @@
 @use 'sass:math';
 @use './media-queries' as *;
 
-// html {
-//   @include phone {
-//     font-size: math.div(1, 3.6) + vw;
-//   }
+html {
+  @include phone {
+    font-size: math.div(1, 3.6) + vw;
+  }
 
-//   @include tablet {
-//     font-size: math.div(1, 7.68) + vw;
-//   }
+  @include tablet {
+    font-size: math.div(1, 7.68) + vw;
+  }
 
-//   @include laptop {
-//     font-size: math.div(1, 13.66) + vw;
-//   }
-//   @include wide {
-//     font-size: math.div(1, 19.2) + vw;
-//   }
-// }
+  @include laptop {
+    font-size: math.div(1, 13.66) + vw;
+  }
+  @include wide {
+    font-size: math.div(1, 19.2) + vw;
+  }
+}
