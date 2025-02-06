@@ -6,25 +6,25 @@
   flex-direction: column;
   margin-top: auto;
   background-color: $color-dark-black;
-  padding: 240rem 320rem;
-
-  @include laptop {
-    padding: 240rem 64rem;
-  }
-
-  @include tablet {
-    padding: 240rem 32rem;
-  }
-
-  @include phone {
-    padding: 144rem 16rem;
-  }
 
   &__top {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 240rem 320rem;
     gap: 56rem;
+
+    @include laptop {
+      padding: 240rem 64rem;
+    }
+
+    @include tablet {
+      padding: 240rem 32rem;
+    }
+
+    @include phone {
+      padding: 144rem 16rem;
+    }
 
     .footer__contacts {
       .footer__title {
@@ -103,27 +103,31 @@
       }
     }
   }
-}
 
-.footer__bottom {
-  padding: 24rem 320rem;
+  &__bottom {
+    padding: 24rem 320rem;
 
-  @include laptop {
-    padding: 24rem 64rem;
+    @include laptop {
+      padding: 24rem 64rem;
+    }
+
+    @include tablet {
+      padding: 24rem 32rem;
+    }
+
+    @include phone {
+      padding: 24rem 16rem;
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+    border-top: 1rem solid $color-black;
+    background-color: $color-dark-black;
+    color: $color-white;
+    font-weight: 300;
+    font-size: 12rem;
   }
-
-  @include phone {
-    padding: 144rem 16rem;
-  }
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20rem;
-  border-top: 1rem solid $color-black;
-  background-color: $color-dark-black;
-  color: $color-white;
-  font-weight: 300;
-  font-size: 12rem;
 }

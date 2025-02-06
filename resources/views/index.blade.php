@@ -137,16 +137,16 @@
                     </p>
                 </div>
             </section>
+            <section class="footer__bottom">
+                <p class="footer__bottom-rights">
+                    © 2013-2025 Диджитал-агентство 2И
+                </p>
+                <p class="footer__bottom-name">
+                    ИП Артамонов Иван Сергеевич
+                    <br />
+                    ОГРНИП 316470400116880
+                </p>
+            </section>
         </footer>
-        <section class="footer__bottom">
-            <p class="footer__bottom-rights">
-                © 2013-2025 Диджитал-агентство 2И
-            </p>
-            <p class="footer__bottom-name">
-                ИП Артамонов Иван Сергеевич
-                <br />
-                ОГРНИП 316470400116880
-            </p>
-        </section>
     </body>
 </html>
