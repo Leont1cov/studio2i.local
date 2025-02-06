@@ -20,6 +20,21 @@
       padding: 8rem 8rem;
     }
 
+    .logo {
+      width: 64rem;
+      height: 64rem;
+
+      @include tablet {
+        width: 48rem;
+        height: 48rem;
+      }
+
+      @include phone {
+        width: 40rem;
+        height: 40rem;
+      }
+    }
+
     .header__menu {
       margin-left: auto;
 

@@ -9,9 +9,10 @@
     <body class="body">
         <header class="header">
             <div class="header__inner">
-                <a href="#" class="header__logo logo" title="2I">
+                <a href="#" class="header__logo" title="2I">
                     <img
                         src="{{ Vite::asset('resources/views/components/icons/logo.svg') }}"
+                        class="logo"
                         alt=""
                     />
                 </a>
@@ -57,8 +58,7 @@
             <div class="hero">
                 <div class="hero__inner">
                     <h1 class="hero__title">
-                        <span>Разработка веб-сервисов</span>
-                        <span>и сайтов c 2013 года</span>
+                        Разработка веб-сервисов и&nbsp;сайтов c&nbsp;2013 года
                     </h1>
                     <a
                         href="tel:+79310093772"
