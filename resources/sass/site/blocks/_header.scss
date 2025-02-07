@@ -105,24 +105,6 @@
             color: $color-dark-blue;
           }
         }
-
-        .button_transparent {
-          @include phone {
-            border: none;
-            .button_number {
-              display: none;
-            }
-
-            &:hover {
-              border: none;
-              color: $color-blue-accent;
-            }
-
-            &:active {
-              color: $color-dark-blue;
-            }
-          }
-        }
       }
     }
   }

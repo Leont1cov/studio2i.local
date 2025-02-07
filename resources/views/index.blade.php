@@ -10,11 +10,7 @@
         <header class="header">
             <div class="header__inner">
                 <a href="#" class="header__logo" title="2I">
-                    <img
-                        src="{{ Vite::asset('resources/views/components/icons/logo.svg') }}"
-                        class="logo"
-                        alt=""
-                    />
+                    <img src="{{ asset('logo.svg') }}" class="logo" alt="" />
                 </a>
 
                 <nav class="header__menu">
@@ -42,7 +38,7 @@
                                 href="tel:+79310093772"
                                 class="header__menu-link button button_transparent"
                             >
-                                <span class="_icon-phone phone"></span>
+                                <i class="fa fa-mobile" aria-hidden="true"></i>
 
                                 <span class="button_number">
                                     +7 931 009-37-72
@@ -64,7 +60,7 @@
                         href="tel:+79310093772"
                         class="button hero__button button_painted"
                     >
-                        <span class="_icon-phone phone"></span>
+                        <i class="fa fa-mobile" aria-hidden="true"></i>
                         +7 931 009-37-72
                     </a>
                 </div>
